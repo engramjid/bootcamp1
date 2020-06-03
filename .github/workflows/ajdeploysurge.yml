@@ -29,4 +29,4 @@ jobs:
     - name: Installing surge
       run: npm install --global surge
     - name: deploying using surge
-      run: surge ./ creativeminds.surge.sh --token $ {{ secret.surgerytoken }}
+      run: surge ./ creativeminds.surge.sh --token ${{secret.SURGE_TOKEN}}
